@@ -9,7 +9,7 @@ import { DOCTOR_BY_SLUG, doctorHref } from "@/content/doctors";
 import { BRANCH_LIST, SITE_URL } from "@/lib/site";
 import { pageMeta } from "@/lib/seo";
 import { blogPostingSchema } from "@/lib/schema";
-import { formatDate, readingTime, withHeadingIds } from "@/lib/utils";
+import { formatDate, normaliseHeadings, readingTime, withHeadingIds } from "@/lib/utils";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { Confirm } from "@/components/ui/Confirm";
@@ -40,7 +40,7 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = getPost(params.slug);
   if (!post) notFound();
-  const { html, toc } = withHeadingIds(post.html);
+  const { html, toc } = withHeadingIds(normaliseHeadings(post.html));
   const cat = CATEGORY_BY_SLUG[post.categories[0]];
   const spec = primarySpecialityForPost(post);
   const reviewerSlug = post.categories.map((c) => REVIEWERS[c]).find(Boolean);

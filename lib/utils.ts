@@ -46,3 +46,15 @@ export function withHeadingIds(html: string) {
   });
   return { html: out, toc };
 }
+
+/**
+ * Shifts headings so the highest level in migrated copy is h2 (the page owns
+ * the h1). WordPress authors often skipped straight from h1 to h3.
+ */
+export function normaliseHeadings(html: string) {
+  const levels = Array.from(html.matchAll(/<h([2-6])[\s>]/g), (m) => Number(m[1]));
+  if (!levels.length) return html;
+  const shift = Math.min(...levels) - 2;
+  if (shift <= 0) return html;
+  return html.replace(/<(\/?)h([2-6])([\s>])/g, (_, slash: string, n: string, end: string) => `<${slash}h${Number(n) - shift}${end}`);
+}

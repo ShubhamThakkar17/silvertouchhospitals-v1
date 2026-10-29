@@ -13,7 +13,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: { DEFAULT: v("primary"), dark: v("primary-dark"), tint: v("primary-tint") },
-        emergency: { DEFAULT: v("emergency"), dark: v("emergency-dark") },
+        emergency: { DEFAULT: v("emergency"), dark: v("emergency-dark"), brand: v("emergency-brand") },
         ink: v("ink"),
         body: v("body"),
         surface: v("surface"),

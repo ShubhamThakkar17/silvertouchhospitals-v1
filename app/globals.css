@@ -11,8 +11,12 @@
   --primary: 0 78 160;          /* #004EA0 Silver Touch blue */
   --primary-dark: 0 61 125;     /* hover, 8% darker */
   --primary-tint: 232 240 250;  /* #E8F0FA */
-  --emergency: 237 27 36;       /* #ED1B24, emergency only */
-  --emergency-dark: 196 18 26;
+  /* Emergency only. Brand red #ED1B24 gives white text just 4.39:1, below
+     WCAG AA, so text-bearing red uses #D3131B (5.4:1); the brand red stays
+     for non-text accents. */
+  --emergency: 211 19 27;       /* #D3131B */
+  --emergency-dark: 176 14 20;
+  --emergency-brand: 237 27 36; /* #ED1B24 */
   --ink: 30 41 59;              /* #1E293B headings, dark bands */
   --body: 85 85 85;             /* #555555 paragraphs */
   --surface: 246 246 246;       /* #F6F6F6 alternating sections */
@@ -70,7 +74,9 @@
     @apply absolute left-1 top-[0.7em] h-2 w-2 rounded-full bg-primary;
   }
   .prose-st ol { @apply list-decimal space-y-2 pl-6 marker:font-semibold marker:text-primary; }
-  .prose-st img { @apply h-auto w-full rounded-card; }
+  .prose-st > :first-child { @apply mt-0; }
+  /* Migrated photos vary from landscape to tall portrait; cap the height. */
+  .prose-st img { @apply h-auto max-h-[440px] w-auto max-w-full rounded-card object-cover; }
   .prose-st figure { @apply my-8; }
   .prose-st table { @apply w-full border-collapse overflow-hidden rounded-card text-left text-base; }
   .prose-st th { @apply bg-surface px-4 py-3 font-semibold text-ink; }

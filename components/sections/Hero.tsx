@@ -47,9 +47,9 @@ export function Hero() {
             Multispeciality ICU and surgical care in Ahmedabad, with 24x7 emergency at Nirnay Nagar and Satellite.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <BookButton variant="white">Book An Appointment</BookButton>
-            <details className="group relative">
-              <summary className={pillClasses("emergency", "cursor-pointer list-none [&::-webkit-details-marker]:hidden")}>
+            <BookButton variant="white" className="w-full sm:w-auto">Book An Appointment</BookButton>
+            <details className="group relative w-full sm:w-auto">
+              <summary className={pillClasses("emergency", "w-full cursor-pointer list-none sm:w-auto [&::-webkit-details-marker]:hidden")}>
                 <span>Call Emergency</span>
                 <ArrowDisc variant="emergency" icon={<Phone className="h-4 w-4" aria-hidden="true" />} />
               </summary>

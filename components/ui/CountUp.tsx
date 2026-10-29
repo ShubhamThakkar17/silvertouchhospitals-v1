@@ -26,7 +26,8 @@ export function CountUp({ value, prefix = "", suffix = "" }: { value: number; pr
     return () => io.disconnect();
   }, [value]);
   return (
-    <span ref={ref} aria-label={`${prefix}${value}${suffix}`}>
+    <span ref={ref}>
+      <span className="sr-only">{`${prefix}${value}${suffix}`}</span>
       <span aria-hidden="true">
         {prefix}
         {n}

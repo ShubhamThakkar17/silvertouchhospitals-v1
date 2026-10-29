@@ -29,12 +29,12 @@ export default function ContactPage() {
             <article key={b.id} className="flex flex-col overflow-hidden rounded-[18px] border border-line">
               <div className="p-6 md:p-8">
                 <h2 className="text-2xl font-semibold">{b.label}</h2>
-                <dl className="mt-6 space-y-5">
+                <div className="mt-6 space-y-5">
                   <div className="flex gap-3">
                     <MapPin className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
                     <div>
-                      <dt className="font-semibold text-ink">Address</dt>
-                      <dd>
+                      <p className="font-semibold text-ink">Address</p>
+                      <div>
                         <address className="not-italic">
                           {b.addressLines.map((l) => (
                             <span key={l} className="block">
@@ -42,44 +42,44 @@ export default function ContactPage() {
                             </span>
                           ))}
                         </address>
-                      </dd>
+                      </div>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <Phone className="mt-1 h-5 w-5 shrink-0 text-emergency" aria-hidden="true" />
                     <div>
-                      <dt className="font-semibold text-ink">Emergency Cases</dt>
-                      <dd>
+                      <p className="font-semibold text-ink">Emergency Cases</p>
+                      <div>
                         <a href={b.phoneHref} className="text-lg font-semibold text-ink hover:underline">
                           {b.phone}
                         </a>
-                      </dd>
+                      </div>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <Clock className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
                     <div>
-                      <dt className="font-semibold text-ink">OPD Timings</dt>
-                      <dd>
+                      <p className="font-semibold text-ink">OPD Timings</p>
+                      <div>
                         {OPD_HOURS.label}. Emergency 24x7.
-                      </dd>
+                      </div>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <Mail className="mt-1 h-5 w-5 shrink-0 text-primary" aria-hidden="true" />
                     <div>
-                      <dt className="font-semibold text-ink">Get Support</dt>
-                      <dd className="[overflow-wrap:anywhere]">
-                        <a href={`mailto:${b.email}`} className="block hover:underline">
+                      <p className="font-semibold text-ink">Get Support</p>
+                      <div className="[overflow-wrap:anywhere]">
+                        <a href={`mailto:${b.email}`} className="flex min-h-[36px] items-center hover:underline">
                           {b.email}
                         </a>
-                        <a href={`mailto:${b.hrEmail}`} className="block text-sm hover:underline">
+                        <a href={`mailto:${b.hrEmail}`} className="flex min-h-[36px] items-center text-sm hover:underline">
                           HR: {b.hrEmail}
                         </a>
-                      </dd>
+                      </div>
                     </div>
                   </div>
-                </dl>
+                </div>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a href={b.phoneHref} className={pillClasses("emergency")}>
                     <span>Call {b.name}</span>

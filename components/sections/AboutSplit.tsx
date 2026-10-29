@@ -43,6 +43,7 @@ export function AboutSplit() {
               <Image src={b.src} alt="Patient room at a Silver Touch hospital" fill sizes="(min-width: 1024px) 460px, 70vw" className="object-cover" />
             </div>
           </Reveal>
+          <div>
           <dl className="divide-y divide-line">
             {PROOF_POINTS.map((p, i) => (
               <Reveal key={p.label} delay={i * 80} className="py-5 first:pt-0">
@@ -53,10 +54,9 @@ export function AboutSplit() {
                 <dd className="mt-1 text-base">{p.label}</dd>
               </Reveal>
             ))}
-            <div className="pt-5">
-              <Confirm note="Doctor count, surgeries performed, years since founding, Google rating" />
-            </div>
           </dl>
+          <Confirm note="Doctor count, surgeries performed, years since founding, Google rating" className="mt-5" />
+          </div>
         </div>
       </div>
     </section>

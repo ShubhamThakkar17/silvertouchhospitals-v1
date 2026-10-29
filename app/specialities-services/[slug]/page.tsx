@@ -152,12 +152,13 @@ export default function SpecialityPage({ params }: { params: { slug: string } })
             </div>
             <aside className="lg:sticky lg:top-40 lg:self-start" aria-label="Book an appointment">
               <div className="rounded-[18px] bg-white p-6">
-                <p className="text-xl font-semibold text-ink">Book a {s.label ?? s.name} consultation</p>
+                <p className="text-xl font-semibold text-ink">Book a consultation</p>
+                <p className="mt-1 text-primary">{s.label ?? s.name}</p>
                 <p className="mt-2 flex items-center gap-2 text-sm">
                   <Clock className="h-4 w-4 text-primary" aria-hidden="true" /> OPD {OPD_HOURS.label}
                 </p>
                 <div className="mt-5">
-                  <AppointmentForm compact preset={{ department }} idPrefix="rail" />
+                  <AppointmentForm compact stacked preset={{ department }} idPrefix="rail" />
                 </div>
               </div>
               <ul className="mt-4 space-y-2">

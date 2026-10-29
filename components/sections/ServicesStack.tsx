@@ -64,7 +64,7 @@ export function ServicesStack() {
               <Reveal as="li" key={it.title} delay={i * 80}>
                 <article className="group relative grid gap-5 rounded-card bg-white p-5 sm:grid-cols-[1fr_180px] sm:p-6">
                   <div>
-                    <Image src={icon.src} alt="" width={56} height={56} className="h-14 w-14 rounded-full" />
+                    <Image src={icon.src} alt="" width={icon.width} height={icon.height} className="h-14 w-auto" />
                     <h3 className="mt-4 text-2xl font-semibold">{it.title}</h3>
                     <p className="mt-2">{it.text}</p>
                     <Link href={it.href} className="mt-4 inline-flex min-h-[44px] items-center gap-1.5 font-medium text-primary hover:underline">

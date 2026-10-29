@@ -1,0 +1,17 @@
+source,destination,status
+/dr-jil-p-patel/,/doctor-team/dr-jil-p-patel/,301
+/testimonails/,/testimonials/,301
+/testimonails/:slug/,/testimonials/:slug/,301
+/category/uncategorized/,/blogs/,301
+/category/uncategorized/page/:n/,/blogs/,301
+/category/:slug/page/:n/,/category/:slug/,301
+/thank-you/,/contact-us/,301
+/feed/,/blogs/,301
+/author/admin/,/blogs/,301
+/sitemap_index.xml,/sitemap.xml,301
+/page-sitemap.xml,/sitemap.xml,301
+/post-sitemap.xml,/sitemap.xml,301
+/doctor-team-sitemap.xml,/sitemap.xml,301
+/testimonails-sitemap.xml,/sitemap.xml,301
+/category-sitemap.xml,/sitemap.xml,301
+/doctor-team/dr-gopal-singh-rajpurohit-2/,/doctor-team/dr-gopal-singh-rajpurohit/,301

@@ -33,9 +33,12 @@ export function AppointmentForm({
   tone = "light",
   onDone,
   idPrefix,
+  stacked = false,
 }: {
   preset?: AppointmentPreset;
   compact?: boolean;
+  /** Single column, for narrow containers such as a sidebar. */
+  stacked?: boolean;
   tone?: "light" | "dark";
   onDone?: () => void;
   idPrefix?: string;
@@ -157,7 +160,7 @@ export function AppointmentForm({
   const lbl = cn(label, tone === "dark" && "text-white");
 
   return (
-    <form ref={formRef} onSubmit={onSubmit} noValidate className="grid gap-4 sm:grid-cols-2">
+    <form ref={formRef} onSubmit={onSubmit} noValidate className={cn("grid gap-4", !stacked && "sm:grid-cols-2")}>
       {/* Honeypot: hidden from people, tempting to bots. */}
       <div aria-hidden="true" className="absolute -left-[9999px] h-0 w-0 overflow-hidden">
         <label>
