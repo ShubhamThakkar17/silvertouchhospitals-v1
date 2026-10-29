@@ -1,0 +1,652 @@
+{
+  "https://www.silvertouchhospitals.com/wp-content/themes/silver-touch-hospital/assets/images/logo.jpg": {
+    "src": "/media/themes/silver-touch-hospital/assets/images/logo.webp",
+    "width": 167,
+    "height": 99
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Critical-Care.jpg": {
+    "src": "/media/uploads/2022/04/Critical-Care.webp",
+    "width": 65,
+    "height": 68
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Dentistry.jpg": {
+    "src": "/media/uploads/2022/04/Dentistry.webp",
+    "width": 57,
+    "height": 62
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-chirag.jpg": {
+    "src": "/media/uploads/2022/04/dr-chirag.webp",
+    "width": 1024,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-ishan-600x400.jpg": {
+    "src": "/media/uploads/2022/04/dr-ishan-600x400.webp",
+    "width": 600,
+    "height": 400
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-jitendra.jpg": {
+    "src": "/media/uploads/2022/04/dr-jitendra.webp",
+    "width": 1023,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-manthan-patel.jpg": {
+    "src": "/media/uploads/2022/04/dr-manthan-patel.webp",
+    "width": 269,
+    "height": 271
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-mayur-patel.jpg": {
+    "src": "/media/uploads/2022/04/dr-mayur-patel.webp",
+    "width": 1023,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-nisarg.jpg": {
+    "src": "/media/uploads/2022/04/dr-nisarg.webp",
+    "width": 1024,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-priank.jpg": {
+    "src": "/media/uploads/2022/04/dr-priank.webp",
+    "width": 1023,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-ronak-600x400.jpg": {
+    "src": "/media/uploads/2022/04/dr-ronak-600x400.webp",
+    "width": 600,
+    "height": 400
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Dr-Simple-Bhadania.jpg": {
+    "src": "/media/uploads/2022/04/Dr-Simple-Bhadania.webp",
+    "width": 269,
+    "height": 271
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-vadik.jpg": {
+    "src": "/media/uploads/2022/04/dr-vadik.webp",
+    "width": 1024,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/dr-vikram.jpg": {
+    "src": "/media/uploads/2022/04/dr-vikram.webp",
+    "width": 1024,
+    "height": 1280
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Gastroenterology.jpg": {
+    "src": "/media/uploads/2022/04/Gastroenterology.webp",
+    "width": 56,
+    "height": 58
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/General-Surgery.jpg": {
+    "src": "/media/uploads/2022/04/General-Surgery.webp",
+    "width": 65,
+    "height": 62
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/GI-Surgery.jpg": {
+    "src": "/media/uploads/2022/04/GI-Surgery.webp",
+    "width": 65,
+    "height": 62
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Gynecology-Obstetrics.jpg": {
+    "src": "/media/uploads/2022/04/Gynecology-Obstetrics.webp",
+    "width": 65,
+    "height": 62
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Nephrology.jpg": {
+    "src": "/media/uploads/2022/04/Nephrology.webp",
+    "width": 76,
+    "height": 63
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Orthopedics.jpg": {
+    "src": "/media/uploads/2022/04/Orthopedics.webp",
+    "width": 65,
+    "height": 62
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Spine-Surgery.jpg": {
+    "src": "/media/uploads/2022/04/Spine-Surgery.webp",
+    "width": 65,
+    "height": 66
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/04/Urology.jpg": {
+    "src": "/media/uploads/2022/04/Urology.webp",
+    "width": 65,
+    "height": 66
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/08/MA-Yojna.jpg": {
+    "src": "/media/uploads/2022/08/MA-Yojna.webp",
+    "width": 289,
+    "height": 174
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2022/08/PMJAY.jpg": {
+    "src": "/media/uploads/2022/08/PMJAY.webp",
+    "width": 247,
+    "height": 200
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2023/09/banner04.jpg": {
+    "src": "/media/uploads/2023/09/banner04.webp",
+    "width": 1366,
+    "height": 683
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-01.jpg": {
+    "src": "/media/uploads/2024/05/about-01.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-02.jpg": {
+    "src": "/media/uploads/2024/05/about-02.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-03.jpg": {
+    "src": "/media/uploads/2024/05/about-03.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-04.jpg": {
+    "src": "/media/uploads/2024/05/about-04.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-05.jpg": {
+    "src": "/media/uploads/2024/05/about-05.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-06.jpg": {
+    "src": "/media/uploads/2024/05/about-06.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/about-07.jpg": {
+    "src": "/media/uploads/2024/05/about-07.webp",
+    "width": 1125,
+    "height": 453
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/chirag-patel.png": {
+    "src": "/media/uploads/2024/05/chirag-patel.webp",
+    "width": 269,
+    "height": 271
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/dr-harisl.png": {
+    "src": "/media/uploads/2024/05/dr-harisl.webp",
+    "width": 269,
+    "height": 271
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2024/05/Harshil-suit-1-600x400.jpg": {
+    "src": "/media/uploads/2024/05/Harshil-suit-1-600x400.webp",
+    "width": 600,
+    "height": 400
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/24-hours-hospital.jpg": {
+    "src": "/media/uploads/2025/07/24-hours-hospital.webp",
+    "width": 714,
+    "height": 1000
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/acko.png": {
+    "src": "/media/uploads/2025/07/acko.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/back-pain-spine-specialist.jpg": {
+    "src": "/media/uploads/2025/07/back-pain-spine-specialist.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/bajaj.png": {
+    "src": "/media/uploads/2025/07/bajaj.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/cholams.png": {
+    "src": "/media/uploads/2025/07/cholams.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/dental-surgery.jpg": {
+    "src": "/media/uploads/2025/07/dental-surgery.webp",
+    "width": 566,
+    "height": 850
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/dentist-ahmedabad.jpg": {
+    "src": "/media/uploads/2025/07/dentist-ahmedabad.webp",
+    "width": 566,
+    "height": 850
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Emergency-Care-Hospital-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/07/Emergency-Care-Hospital-Ahmedabad.webp",
+    "width": 1000,
+    "height": 700
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Emergency-Help.png": {
+    "src": "/media/uploads/2025/07/Emergency-Help.webp",
+    "width": 124,
+    "height": 119
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/ENT-specialists.jpg": {
+    "src": "/media/uploads/2025/07/ENT-specialists.webp",
+    "width": 426,
+    "height": 640
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/ENT.jpg": {
+    "src": "/media/uploads/2025/07/ENT.webp",
+    "width": 513,
+    "height": 770
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/faq-1-800x299.jpg": {
+    "src": "/media/uploads/2025/07/faq-1-800x299.webp",
+    "width": 800,
+    "height": 299
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Full-Body-Checkups.jpg": {
+    "src": "/media/uploads/2025/07/Full-Body-Checkups.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Gastrointestinal-health-issues.jpg": {
+    "src": "/media/uploads/2025/07/Gastrointestinal-health-issues.webp",
+    "width": 600,
+    "height": 900
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/gastrologist-doctor-1.jpg": {
+    "src": "/media/uploads/2025/07/gastrologist-doctor-1.webp",
+    "width": 606,
+    "height": 732
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/hdfc.png": {
+    "src": "/media/uploads/2025/07/hdfc.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Health-CheckUp.jpg": {
+    "src": "/media/uploads/2025/07/Health-CheckUp.webp",
+    "width": 400,
+    "height": 600
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Heart-Health.jpg": {
+    "src": "/media/uploads/2025/07/Heart-Health.webp",
+    "width": 1000,
+    "height": 714
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/hip-replacement-1.png": {
+    "src": "/media/uploads/2025/07/hip-replacement-1.webp",
+    "width": 1200,
+    "height": 685
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Hospitals-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/07/Hospitals-Ahmedabad.webp",
+    "width": 1000,
+    "height": 563
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/icic.png": {
+    "src": "/media/uploads/2025/07/icic.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/joint-replacement-surgeon.jpg": {
+    "src": "/media/uploads/2025/07/joint-replacement-surgeon.webp",
+    "width": 667,
+    "height": 1000
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/kidney-hospital.jpg": {
+    "src": "/media/uploads/2025/07/kidney-hospital.webp",
+    "width": 1200,
+    "height": 700
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/kidney-specialist.jpg": {
+    "src": "/media/uploads/2025/07/kidney-specialist.webp",
+    "width": 1200,
+    "height": 850
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Knee-Replacement.jpg": {
+    "src": "/media/uploads/2025/07/Knee-Replacement.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Medical-professionals.png": {
+    "src": "/media/uploads/2025/07/Medical-professionals.webp",
+    "width": 124,
+    "height": 119
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Medical-Treatment.png": {
+    "src": "/media/uploads/2025/07/Medical-Treatment.webp",
+    "width": 124,
+    "height": 119
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/newlogop.png": {
+    "src": "/media/uploads/2025/07/newlogop.webp",
+    "width": 192,
+    "height": 200
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/orthopedic-hospital-1.jpg": {
+    "src": "/media/uploads/2025/07/orthopedic-hospital-1.webp",
+    "width": 562,
+    "height": 673
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/private-emergency-hospital-1.jpg": {
+    "src": "/media/uploads/2025/07/private-emergency-hospital-1.webp",
+    "width": 664,
+    "height": 740
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/relacinc.png": {
+    "src": "/media/uploads/2025/07/relacinc.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/sbi-general.png": {
+    "src": "/media/uploads/2025/07/sbi-general.webp",
+    "width": 158,
+    "height": 59
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Surgical-Department.png": {
+    "src": "/media/uploads/2025/07/Surgical-Department.webp",
+    "width": 124,
+    "height": 119
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Urology-doctor.jpg": {
+    "src": "/media/uploads/2025/07/Urology-doctor.webp",
+    "width": 453,
+    "height": 680
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/07/Urology-treatment.jpg": {
+    "src": "/media/uploads/2025/07/Urology-treatment.webp",
+    "width": 513,
+    "height": 770
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/08/general-surgery-hospital.jpg": {
+    "src": "/media/uploads/2025/08/general-surgery-hospital.webp",
+    "width": 600,
+    "height": 400
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/08/general-surgery.jpg": {
+    "src": "/media/uploads/2025/08/general-surgery.webp",
+    "width": 400,
+    "height": 500
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/08/spine-injury.jpg": {
+    "src": "/media/uploads/2025/08/spine-injury.webp",
+    "width": 600,
+    "height": 400
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/08/spine-specialist.jpg": {
+    "src": "/media/uploads/2025/08/spine-specialist.webp",
+    "width": 600,
+    "height": 410
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/09/cghs.jpg": {
+    "src": "/media/uploads/2025/09/cghs.webp",
+    "width": 247,
+    "height": 200
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/09/dental-hospital.jpg": {
+    "src": "/media/uploads/2025/09/dental-hospital.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/09/diabetes-specialist.jpg": {
+    "src": "/media/uploads/2025/09/diabetes-specialist.webp",
+    "width": 1000,
+    "height": 562
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/09/ENT-Specialist.jpg": {
+    "src": "/media/uploads/2025/09/ENT-Specialist.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/09/general-surgeon.jpg": {
+    "src": "/media/uploads/2025/09/general-surgeon.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/10/gastroenterology.jpg": {
+    "src": "/media/uploads/2025/10/gastroenterology.webp",
+    "width": 1000,
+    "height": 705
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/10/knee-replacement.jpg": {
+    "src": "/media/uploads/2025/10/knee-replacement.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/10/knee-replacements.jpg": {
+    "src": "/media/uploads/2025/10/knee-replacements.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/10/lungs-care.jpg": {
+    "src": "/media/uploads/2025/10/lungs-care.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/11/Dental-treatment.jpg": {
+    "src": "/media/uploads/2025/11/Dental-treatment.webp",
+    "width": 1000,
+    "height": 665
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/11/Health-After-40.png": {
+    "src": "/media/uploads/2025/11/Health-After-40.webp",
+    "width": 1000,
+    "height": 571
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/11/Joint-Replacement.jpg": {
+    "src": "/media/uploads/2025/11/Joint-Replacement.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/Bariatric-Surgery-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/12/Bariatric-Surgery-Ahmedabad.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/Bariatric-Surgery-Copy.jpg": {
+    "src": "/media/uploads/2025/12/Bariatric-Surgery-Copy.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/dental-doctor-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/12/dental-doctor-Ahmedabad.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/ENT-doctor-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/12/ENT-doctor-Ahmedabad.webp",
+    "width": 1000,
+    "height": 563
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/Full-Body-Health-Checkups.jpg": {
+    "src": "/media/uploads/2025/12/Full-Body-Health-Checkups.webp",
+    "width": 1168,
+    "height": 500
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/knee-replacement-surgeon-Ahmedabad.jpg": {
+    "src": "/media/uploads/2025/12/knee-replacement-surgeon-Ahmedabad.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2025/12/Silver-Touch-Gujrat-hospital.jpg": {
+    "src": "/media/uploads/2025/12/Silver-Touch-Gujrat-hospital.webp",
+    "width": 1108,
+    "height": 952
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/01/bariatric.jpg": {
+    "src": "/media/uploads/2026/01/bariatric.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/01/gastroenterologist.jpg": {
+    "src": "/media/uploads/2026/01/gastroenterologist.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/01/joint-pain-treatment.jpg": {
+    "src": "/media/uploads/2026/01/joint-pain-treatment.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/01/kidney-transplant-hospital.jpg": {
+    "src": "/media/uploads/2026/01/kidney-transplant-hospital.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/02/bariatric-surgery-weight.jpg": {
+    "src": "/media/uploads/2026/02/bariatric-surgery-weight.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/02/Hip-Replacement.jpg": {
+    "src": "/media/uploads/2026/02/Hip-Replacement.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/02/Ortho-Hospital.jpg": {
+    "src": "/media/uploads/2026/02/Ortho-Hospital.webp",
+    "width": 1000,
+    "height": 563
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/03/bariatric-surgery-in-ahmedabad.jpg": {
+    "src": "/media/uploads/2026/03/bariatric-surgery-in-ahmedabad.webp",
+    "width": 1168,
+    "height": 500
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/03/health-checkup-silver-touch-hospital.jpg": {
+    "src": "/media/uploads/2026/03/health-checkup-silver-touch-hospital.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/03/Hip-Replacements.jpg": {
+    "src": "/media/uploads/2026/03/Hip-Replacements.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/03/Minimum-Bmi-weight-loss.jpg": {
+    "src": "/media/uploads/2026/03/Minimum-Bmi-weight-loss.webp",
+    "width": 1000,
+    "height": 667
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/03/orthopedics-joint-replacement-surgery-ahmedabad.jpeg": {
+    "src": "/media/uploads/2026/03/orthopedics-joint-replacement-surgery-ahmedabad.webp",
+    "width": 1168,
+    "height": 500
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/04/Bariatric-Surgery-diet.png": {
+    "src": "/media/uploads/2026/04/Bariatric-Surgery-diet.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/04/digestion.png": {
+    "src": "/media/uploads/2026/04/digestion.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/04/knee-replacement-amd.png": {
+    "src": "/media/uploads/2026/04/knee-replacement-amd.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/05/Multispeciality-Hospitals.png": {
+    "src": "/media/uploads/2026/05/Multispeciality-Hospitals.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/05/silvertouch.jpg": {
+    "src": "/media/uploads/2026/05/silvertouch.webp",
+    "width": 1280,
+    "height": 1600
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Endocrinologist.png": {
+    "src": "/media/uploads/2026/06/Endocrinologist.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Full-Body-Checkup.png": {
+    "src": "/media/uploads/2026/06/Full-Body-Checkup.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Get-Braces.png": {
+    "src": "/media/uploads/2026/06/Get-Braces.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Joint-Replacement.png": {
+    "src": "/media/uploads/2026/06/Joint-Replacement.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Robotic-Knee-Replacement.png": {
+    "src": "/media/uploads/2026/06/Robotic-Knee-Replacement.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/spine-specialist.png": {
+    "src": "/media/uploads/2026/06/spine-specialist.webp",
+    "width": 1536,
+    "height": 1024
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/06/Weight-Loss-Bariatric-Surgery.png": {
+    "src": "/media/uploads/2026/06/Weight-Loss-Bariatric-Surgery.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/07/Ercp.png": {
+    "src": "/media/uploads/2026/07/Ercp.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/07/Health-Check-Up.png": {
+    "src": "/media/uploads/2026/07/Health-Check-Up.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/07/Robotic-knee-surgery.png": {
+    "src": "/media/uploads/2026/07/Robotic-knee-surgery.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/08/diabetes.png": {
+    "src": "/media/uploads/2026/08/diabetes.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/08/ENT-hospital.png": {
+    "src": "/media/uploads/2026/08/ENT-hospital.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/08/Fatty-Liver.png": {
+    "src": "/media/uploads/2026/08/Fatty-Liver.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/08/Hip-Replacement.png": {
+    "src": "/media/uploads/2026/08/Hip-Replacement.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/08/weight-loss-surgery-Ahmedabad.png": {
+    "src": "/media/uploads/2026/08/weight-loss-surgery-Ahmedabad.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/09/Enjoy-Navratri-Fasting.png": {
+    "src": "/media/uploads/2026/09/Enjoy-Navratri-Fasting.webp",
+    "width": 1200,
+    "height": 675
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/09/Spine-Problem.png": {
+    "src": "/media/uploads/2026/09/Spine-Problem.webp",
+    "width": 1200,
+    "height": 800
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/09/total-knee-replacement.png": {
+    "src": "/media/uploads/2026/09/total-knee-replacement.webp",
+    "width": 1200,
+    "height": 675
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/10/general-medicine.png": {
+    "src": "/media/uploads/2026/10/general-medicine.webp",
+    "width": 65,
+    "height": 65
+  },
+  "https://www.silvertouchhospitals.com/wp-content/uploads/2026/10/Professional-Medical-Headshot.png": {
+    "src": "/media/uploads/2026/10/Professional-Medical-Headshot.webp",
+    "width": 1096,
+    "height": 1435
+  }
+}

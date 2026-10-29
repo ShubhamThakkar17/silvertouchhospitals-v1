@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Brand tokens. Colours are stored as RGB channels so Tailwind can apply
+ * opacity. To switch to the Silver Touch group green identity, swap the
+ * :root block for the [data-theme="group"] values below (brief 2.3).
+ */
+:root {
+  --primary: 0 78 160;          /* #004EA0 Silver Touch blue */
+  --primary-dark: 0 61 125;     /* hover, 8% darker */
+  --primary-tint: 232 240 250;  /* #E8F0FA */
+  --emergency: 237 27 36;       /* #ED1B24, emergency only */
+  --emergency-dark: 196 18 26;
+  --ink: 30 41 59;              /* #1E293B headings, dark bands */
+  --body: 85 85 85;             /* #555555 paragraphs */
+  --surface: 246 246 246;       /* #F6F6F6 alternating sections */
+  --line: 217 217 217;          /* #D9D9D9 chips, outlines */
+}
+
+[data-theme="group"] {
+  --primary: 10 53 32;          /* #0A3520 group deep green */
+  --primary-dark: 6 38 22;
+  --primary-tint: 232 240 235;  /* #E8F0EB */
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 9rem;
+  }
+  body {
+    @apply bg-white font-sans text-base leading-relaxed text-body antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    @apply text-ink;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply outline-none ring-[3px] ring-primary ring-offset-2;
+  }
+  ::selection {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer components {
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .card {
+    @apply rounded-card bg-surface;
+  }
+  /* Long-form copy migrated from WordPress. */
+  .prose-st {
+    @apply max-w-prose text-[1.0625rem] leading-[1.8] text-body;
+  }
+  .prose-st > * + * { @apply mt-5; }
+  .prose-st h2 { @apply mt-12 text-[1.75rem] font-semibold leading-tight tracking-tight md:text-[2rem]; }
+  .prose-st h3 { @apply mt-10 text-[1.375rem] font-semibold leading-snug; }
+  .prose-st h4, .prose-st h5 { @apply mt-8 text-lg font-semibold; }
+  .prose-st h2 + *, .prose-st h3 + *, .prose-st h4 + *, .prose-st h5 + * { @apply mt-3; }
+  .prose-st a { @apply font-medium text-primary underline decoration-primary/30 underline-offset-4 transition-colors hover:decoration-primary; }
+  .prose-st strong { @apply font-semibold text-ink; }
+  .prose-st ul { @apply space-y-2 pl-0; }
+  .prose-st ul > li { @apply relative pl-7; }
+  .prose-st ul > li::before {
+    content: "";
+    @apply absolute left-1 top-[0.7em] h-2 w-2 rounded-full bg-primary;
+  }
+  .prose-st ol { @apply list-decimal space-y-2 pl-6 marker:font-semibold marker:text-primary; }
+  .prose-st img { @apply h-auto w-full rounded-card; }
+  .prose-st figure { @apply my-8; }
+  .prose-st table { @apply w-full border-collapse overflow-hidden rounded-card text-left text-base; }
+  .prose-st th { @apply bg-surface px-4 py-3 font-semibold text-ink; }
+  .prose-st td { @apply border-t border-line px-4 py-3 align-top; }
+  .prose-st blockquote { @apply border-l-4 border-primary pl-5 italic text-ink; }
+}
+
+@layer utilities {
+  .no-scrollbar { scrollbar-width: none; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .glass {
+    background: rgba(255, 255, 255, 0.14);
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+  }
+}
+
+/* Scroll reveal: fade and rise 24px (brief 2.5). Only hidden once JS runs. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js .reveal { opacity: 1; transform: none; }
+}
