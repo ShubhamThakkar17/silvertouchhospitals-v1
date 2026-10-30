@@ -55,9 +55,12 @@ function PreFooter() {
           <ul className="mt-3 space-y-1.5">
             {BRANCH_LIST.map((b) => (
               <li key={b.id}>
-                <a href={`mailto:${b.email}`} className="inline-flex min-h-[40px] items-center gap-2 break-all hover:text-white">
-                  <Mail className="h-4 w-4 shrink-0 text-white/60" aria-hidden="true" />
-                  {b.name}: <span className="text-white">{b.email}</span>
+                <a href={`mailto:${b.email}`} className="flex min-h-[40px] items-start gap-2 py-1 hover:text-white">
+                  <Mail className="mt-1 h-4 w-4 shrink-0 text-white/60" aria-hidden="true" />
+                  <span className="min-w-0">
+                    <span className="whitespace-nowrap">{b.name}:</span>{" "}
+                    <span className="text-white [overflow-wrap:anywhere]">{b.email}</span>
+                  </span>
                 </a>
               </li>
             ))}
@@ -176,24 +179,24 @@ export function Footer() {
           </p>
           <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p>Copyright © {new Date().getFullYear()} Silver Touch Hospitals. All rights reserved.</p>
-            <ul className="flex flex-wrap gap-x-5 gap-y-1">
+            <ul className="flex flex-wrap gap-x-5">
               <li>
-                <Link href="/privacy-policy/" className="hover:text-white hover:underline">
+                <Link href="/privacy-policy/" className="inline-flex min-h-[44px] items-center hover:text-white hover:underline">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms/" className="hover:text-white hover:underline">
+                <Link href="/terms/" className="inline-flex min-h-[44px] items-center hover:text-white hover:underline">
                   Terms
                 </Link>
               </li>
               <li>
-                <Link href="/patient-rights/" className="hover:text-white hover:underline">
+                <Link href="/patient-rights/" className="inline-flex min-h-[44px] items-center hover:text-white hover:underline">
                   Patient Rights
                 </Link>
               </li>
               <li>
-                <Link href="/sitemap.xml" className="hover:text-white hover:underline" prefetch={false}>
+                <Link href="/sitemap.xml" className="inline-flex min-h-[44px] items-center hover:text-white hover:underline" prefetch={false}>
                   Sitemap
                 </Link>
               </li>

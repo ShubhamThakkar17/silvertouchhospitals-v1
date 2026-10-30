@@ -2,16 +2,47 @@ import Image from "next/image";
 import { BadgeCheck, Phone } from "lucide-react";
 import { BRANCH_LIST, TAGLINE } from "@/lib/site";
 import { img, up } from "@/lib/media";
-import { DOCTOR_BY_SLUG, doctorHref } from "@/content/doctors";
+import { VISIBLE_DOCTORS } from "@/content/doctors";
+import { DEPARTMENT_FOR, SPECIALITY_BY_SLUG } from "@/content/specialities";
 import { EMPANELMENTS, NABH } from "@/content/insurers";
 import { BookButton } from "@/components/forms/BookButton";
-import { PillLink, pillClasses, ArrowDisc } from "@/components/ui/Pill";
+import { pillClasses, ArrowDisc } from "@/components/ui/Pill";
+import { HeroDoctors, type HeroDoctor } from "./HeroDoctors";
+
+/** One-line highlight per doctor, from their published profile. */
+const HIGHLIGHTS: Record<string, string> = {
+  "dr-jil-p-patel": "VELYS robotic knee, CT-free",
+  "dr-manthan-patel": "Brain & spine micro-neurosurgery",
+  "dr-simple-bhadania": "Skull base & scarless ENT surgery",
+  "dr-harshil": "Spine surgery",
+};
+
+/**
+ * Doctors with a real headshot rotate in the hero card. More join
+ * automatically as headshots are added to content/doctors.ts.
+ */
+function heroDoctors(): HeroDoctor[] {
+  const withPhoto = VISIBLE_DOCTORS.filter((d) => d.photo);
+  // Featured first, Dr Jil P. Patel (the brief's featured doctor) leading.
+  withPhoto.sort((a, b) => Number(b.slug === "dr-jil-p-patel") - Number(a.slug === "dr-jil-p-patel") || Number(!!b.featured) - Number(!!a.featured));
+  return withPhoto.map((d) => {
+    const spec = SPECIALITY_BY_SLUG[d.specialities[0]];
+    return {
+      slug: d.slug,
+      name: d.name,
+      designation: d.designation,
+      speciality: spec?.name ?? "",
+      highlight: HIGHLIGHTS[d.slug] ?? spec?.name ?? d.designation,
+      department: DEPARTMENT_FOR[d.specialities[0]],
+      phone: d.phone,
+      photo: img(d.photo!),
+    };
+  });
+}
 
 /** Home hero (brief 2.4 #3, 5.1 #1). Photo: ward at a Silver Touch hospital. */
 export function Hero() {
   const bg = up("2023/09/banner04.jpg");
-  const jil = DOCTOR_BY_SLUG["dr-jil-p-patel"];
-  const jilPhoto = img(jil.photo!);
   return (
     <section className="relative isolate overflow-hidden bg-ink">
       <Image
@@ -25,7 +56,8 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/80 to-ink/20" aria-hidden="true" />
       <div className="container grid min-h-[min(88vh,820px)] items-center gap-10 py-16 lg:grid-cols-[1.4fr_1fr] lg:py-24">
         <div className="text-white">
-          <p className="inline-flex flex-wrap items-center gap-x-3 gap-y-2 rounded-[28px] bg-white/10 py-2 pl-2 pr-4 text-sm backdrop-blur">
+          <div className="inline-flex max-w-full flex-col gap-2 rounded-2xl bg-ink/60 p-2 pr-4 text-sm ring-1 ring-white/15 backdrop-blur">
+            <p className="flex items-center gap-3">
             <span className="flex -space-x-2" aria-hidden="true">
               {EMPANELMENTS.map((e) => {
                 const logo = img(e.image);
@@ -36,12 +68,15 @@ export function Hero() {
                 );
               })}
             </span>
-            <span className="font-medium">PMJAY &amp; CGHS empanelled</span>
-            <span className="hidden text-white/60 sm:inline">·</span>
-            <span className="inline-flex items-center gap-1 text-white/85">
-              <BadgeCheck className="h-4 w-4" aria-hidden="true" /> {NABH.name}, {NABH.branch}
-            </span>
-          </p>
+              <span className="font-medium">PMJAY, CGHS, ISRO &amp; MA Yojana empanelled</span>
+            </p>
+            <p className="flex items-start gap-1.5 pl-1 text-white/90">
+              <BadgeCheck className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+              <span>
+                {NABH.name} · {NABH.branch}
+              </span>
+            </p>
+          </div>
           <h1 className="mt-6 max-w-[14ch] text-display text-white">{TAGLINE}</h1>
           <p className="mt-6 max-w-xl text-lead text-white/85">
             Multispeciality ICU and surgical care in Ahmedabad, with 24x7 emergency at Nirnay Nagar and Satellite.
@@ -65,42 +100,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Floating glass card stack */}
-        <div className="relative mx-auto w-full max-w-sm lg:ml-auto">
-          <div className="glass rounded-[18px] border border-white/20 p-3 shadow-2xl">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-card bg-white/10">
-              <Image src={jilPhoto.src} alt={`Portrait of ${jil.name}`} fill sizes="380px" className="object-cover object-top" priority />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-4 pt-16 text-white">
-                <p className="text-sm text-white/75">Robotic Knee Replacement</p>
-                <p className="text-lg font-semibold">{jil.name}</p>
-                <p className="text-sm text-white/75">Gold Medalist, MS Ortho</p>
-              </div>
-            </div>
-            <div className="mt-3 grid grid-cols-2 gap-2">
-              <BookButton
-                plain
-                preset={{ doctor: jil.name, department: "Orthopedics / Joint Replacement Surgery" }}
-                className="flex min-h-[48px] items-center justify-center rounded-full bg-white px-3 text-sm font-semibold text-ink hover:bg-surface"
-              >
-                Book Appointment
-              </BookButton>
-              <a
-                href={jil.phone!.href}
-                className="flex min-h-[48px] items-center justify-center gap-1.5 rounded-full border border-white/40 px-3 text-sm font-semibold text-white hover:bg-white/10"
-              >
-                <Phone className="h-4 w-4" aria-hidden="true" />
-                Let&apos;s Talk
-              </a>
-            </div>
-          </div>
-          <PillLink
-            href={doctorHref(jil.slug)}
-            variant="outline-dark"
-            className="glass absolute -left-4 top-6 hidden !min-h-[44px] text-sm sm:inline-flex lg:-left-12"
-          >
-            VELYS robotic knee, CT-free
-          </PillLink>
-        </div>
+        <HeroDoctors doctors={heroDoctors()} />
       </div>
     </section>
   );

@@ -101,10 +101,10 @@ export default function PostPage({ params }: { params: { slug: string } }) {
               {toc.length > 2 && (
                 <nav aria-label="On this page" className="mb-10 rounded-card bg-surface p-6">
                   <p className="font-semibold text-ink">On this page</p>
-                  <ol className="mt-3 space-y-2">
+                  <ol className="mt-3 space-y-1">
                     {toc.map((h) => (
                       <li key={h.id} className={h.level === 3 ? "pl-4" : ""}>
-                        <a href={`#${h.id}`} className="text-primary underline-offset-4 hover:underline">
+                        <a href={`#${h.id}`} className="inline-flex min-h-[40px] items-center text-primary underline-offset-4 hover:underline">
                           {h.text}
                         </a>
                       </li>
@@ -162,7 +162,7 @@ export default function PostPage({ params }: { params: { slug: string } }) {
                   ))}
                 </ul>
                 {spec && (
-                  <Link href={specialityHref(spec.slug)} className="mt-2 inline-block text-sm font-semibold underline underline-offset-4">
+                  <Link href={specialityHref(spec.slug)} className="mt-2 inline-flex min-h-[44px] items-center text-sm font-semibold underline underline-offset-4">
                     About {spec.name}
                   </Link>
                 )}

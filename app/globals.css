@@ -40,6 +40,7 @@
   h1, h2, h3, h4, h5 {
     @apply text-ink;
     text-wrap: balance;
+    overflow-wrap: break-word;
   }
   :focus-visible {
     @apply outline-none ring-[3px] ring-primary ring-offset-2;
@@ -59,6 +60,7 @@
   /* Long-form copy migrated from WordPress. */
   .prose-st {
     @apply max-w-prose text-[1.0625rem] leading-[1.8] text-body;
+    overflow-wrap: break-word;
   }
   .prose-st > * + * { @apply mt-5; }
   .prose-st h2 { @apply mt-12 text-[1.75rem] font-semibold leading-tight tracking-tight md:text-[2rem]; }
@@ -78,7 +80,8 @@
   /* Migrated photos vary from landscape to tall portrait; cap the height. */
   .prose-st img { @apply h-auto max-h-[440px] w-auto max-w-full rounded-card object-cover; }
   .prose-st figure { @apply my-8; }
-  .prose-st table { @apply w-full border-collapse overflow-hidden rounded-card text-left text-base; }
+  /* Tables scroll sideways on phones instead of widening the page. */
+  .prose-st table { @apply block w-full max-w-full overflow-x-auto border-collapse rounded-card text-left text-base; }
   .prose-st th { @apply bg-surface px-4 py-3 font-semibold text-ink; }
   .prose-st td { @apply border-t border-line px-4 py-3 align-top; }
   .prose-st blockquote { @apply border-l-4 border-primary pl-5 italic text-ink; }

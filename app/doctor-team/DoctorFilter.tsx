@@ -59,7 +59,7 @@ export function DoctorFilter() {
       <p className="mt-6 text-sm" aria-live="polite">
         {list.length} doctor{list.length === 1 ? "" : "s"}
       </p>
-      <ul className="mt-4 grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mt-4 grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4">
         {list.map((d) => (
           <li key={d.slug}>
             <DoctorCard d={d} headingLevel="h2" />

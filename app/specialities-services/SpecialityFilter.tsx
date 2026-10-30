@@ -54,10 +54,10 @@ export function SpecialityFilter() {
       <p className="mt-6 text-sm" aria-live="polite">
         Showing {list.length} of {SPECIALITIES.length}
       </p>
-      <ul className="mt-4 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <ul className="mt-4 grid gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
         {list.map((s) => (
           <li key={s.slug}>
-            <SpecialityCard s={s} headingLevel="h2" />
+            <SpecialityCard s={s} headingLevel="h2" compactOnMobile />
           </li>
         ))}
       </ul>

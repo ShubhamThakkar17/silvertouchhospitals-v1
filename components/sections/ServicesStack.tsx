@@ -71,8 +71,8 @@ export function ServicesStack() {
                       {it.link} <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                     </Link>
                   </div>
-                  <div className="relative aspect-square overflow-hidden rounded-card">
-                    <Image src={photo.src} alt="" fill sizes="180px" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="relative aspect-[16/9] overflow-hidden rounded-card sm:aspect-square">
+                    <Image src={photo.src} alt="" fill sizes="(min-width: 640px) 180px, 92vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
                   </div>
                 </article>
               </Reveal>

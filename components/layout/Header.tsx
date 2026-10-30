@@ -60,6 +60,7 @@ export function Header({ logo }: { logo: Img }) {
   const pathname = usePathname();
   const [megaOpen, setMegaOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const [drawerSpecOpen, setDrawerSpecOpen] = useState(false);
   const [emergencyOpen, setEmergencyOpen] = useState(false);
   const megaRef = useRef<HTMLLIElement>(null);
   const emergencyRef = useRef<HTMLDivElement>(null);
@@ -95,12 +96,18 @@ export function Header({ logo }: { logo: Img }) {
     document.documentElement.style.overflow = drawerOpen ? "hidden" : "";
   }, [drawerOpen]);
 
+  // A click right after hover opened the menu should keep it open, not toggle it shut.
+  const openedByHover = useRef(false);
   const hoverOpen = () => {
     clearTimeout(closeTimer.current);
+    if (!megaOpen) openedByHover.current = true;
     setMegaOpen(true);
   };
   const hoverClose = () => {
-    closeTimer.current = setTimeout(() => setMegaOpen(false), 150);
+    closeTimer.current = setTimeout(() => {
+      openedByHover.current = false;
+      setMegaOpen(false);
+    }, 150);
   };
 
   return (
@@ -116,19 +123,34 @@ export function Header({ logo }: { logo: Img }) {
             {NAV.map((item) =>
               item.mega ? (
                 <li key={item.href} ref={megaRef} onMouseEnter={hoverOpen} onMouseLeave={hoverClose} className="static">
-                  <button
-                    type="button"
-                    aria-expanded={megaOpen}
-                    aria-controls="mega-menu"
-                    onClick={() => setMegaOpen((o) => !o)}
+                  <div
                     className={cn(
-                      "inline-flex min-h-[44px] items-center gap-1 whitespace-nowrap rounded-full px-2.5 text-[0.9375rem] font-medium transition-colors hover:bg-surface",
+                      "inline-flex items-center rounded-full transition-colors hover:bg-surface",
                       isActive(pathname, item.href) ? "text-primary" : "text-ink",
                     )}
                   >
-                    {item.name}
-                    <ChevronDown className={cn("h-4 w-4 transition-transform", megaOpen && "rotate-180")} aria-hidden="true" />
-                  </button>
+                    {/* The label goes to the specialities page; the arrow (or hover) opens the menu. */}
+                    <Link
+                      href={item.href}
+                      aria-current={pathname === item.href ? "page" : undefined}
+                      className="inline-flex min-h-[44px] items-center whitespace-nowrap rounded-l-full py-0 pl-2.5 pr-1 text-[0.9375rem] font-medium"
+                    >
+                      {item.name}
+                    </Link>
+                    <button
+                      type="button"
+                      aria-expanded={megaOpen}
+                      aria-controls="mega-menu"
+                      aria-label="Show all specialities"
+                      onClick={() => {
+                        if (openedByHover.current) openedByHover.current = false;
+                        else setMegaOpen((o) => !o);
+                      }}
+                      className="grid min-h-[44px] w-8 place-items-center rounded-r-full"
+                    >
+                      <ChevronDown className={cn("h-4 w-4 transition-transform", megaOpen && "rotate-180")} aria-hidden="true" />
+                    </button>
+                  </div>
                   <div
                     id="mega-menu"
                     hidden={!megaOpen}
@@ -276,32 +298,41 @@ export function Header({ logo }: { logo: Img }) {
             {NAV.map((item) =>
               item.mega ? (
                 <li key={item.href}>
-                  <details className="group">
-                    <summary className="flex min-h-[56px] cursor-pointer list-none items-center justify-between text-lg font-medium text-ink [&::-webkit-details-marker]:hidden">
+                  <div className="flex items-center justify-between">
+                    <Link href={item.href} className="flex min-h-[56px] flex-1 items-center text-lg font-medium text-ink">
                       {item.name}
-                      <ChevronDown className="h-5 w-5 transition-transform group-open:rotate-180" aria-hidden="true" />
-                    </summary>
-                    <div className="space-y-5 pb-5">
-                      {GROUPS.map((g) => (
-                        <div key={g}>
-                          <p className="text-sm font-semibold uppercase tracking-wide text-body">{GROUP_LABELS[g]}</p>
-                          <ul className="mt-2">
-                            {MENU_ORDER[g].map((slug) => (
-                              <li key={slug}>
-                                <Link href={specialityHref(slug)} className="flex min-h-[48px] items-center gap-3 text-ink">
-                                  <Icon name={bySlug[slug].icon} className="h-5 w-5 text-primary" />
-                                  {bySlug[slug].label ?? bySlug[slug].name}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                      <Link href="/specialities-services/" className="inline-block font-semibold text-primary underline underline-offset-4">
-                        All specialities
-                      </Link>
-                    </div>
-                  </details>
+                    </Link>
+                    <button
+                      type="button"
+                      aria-expanded={drawerSpecOpen}
+                      aria-controls="drawer-specialities"
+                      aria-label={drawerSpecOpen ? "Hide specialities list" : "Show specialities list"}
+                      onClick={() => setDrawerSpecOpen((o) => !o)}
+                      className="grid h-12 w-12 place-items-center rounded-full bg-surface text-ink"
+                    >
+                      <ChevronDown className={cn("h-5 w-5 transition-transform", drawerSpecOpen && "rotate-180")} aria-hidden="true" />
+                    </button>
+                  </div>
+                  <div id="drawer-specialities" hidden={!drawerSpecOpen} className="space-y-5 pb-5">
+                    {GROUPS.map((g) => (
+                      <div key={g}>
+                        <p className="text-sm font-semibold uppercase tracking-wide text-body">{GROUP_LABELS[g]}</p>
+                        <ul className="mt-2">
+                          {MENU_ORDER[g].map((slug) => (
+                            <li key={slug}>
+                              <Link href={specialityHref(slug)} className="flex min-h-[48px] items-center gap-3 text-ink">
+                                <Icon name={bySlug[slug].icon} className="h-5 w-5 shrink-0 text-primary" />
+                                {bySlug[slug].label ?? bySlug[slug].name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                    <Link href="/specialities-services/" className="inline-flex min-h-[48px] items-center font-semibold text-primary underline underline-offset-4">
+                      View all specialities
+                    </Link>
+                  </div>
                 </li>
               ) : (
                 <li key={item.href}>

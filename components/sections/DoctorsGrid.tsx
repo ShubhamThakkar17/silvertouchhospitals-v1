@@ -31,9 +31,9 @@ export function DoctorsGrid({
             View all doctors <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
-        <ul className="mt-12 grid gap-x-5 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-12 grid grid-cols-2 gap-x-3 gap-y-8 sm:gap-x-5 sm:gap-y-10 lg:grid-cols-4">
           {doctors.map((d, i) => (
-            <Reveal as="li" key={d.slug} delay={(i % 4) * 80}>
+            <Reveal as="li" key={d.slug} delay={(i % 4) * 80} className="h-full">
               <DoctorCard d={d} />
             </Reveal>
           ))}

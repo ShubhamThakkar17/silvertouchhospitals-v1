@@ -32,8 +32,8 @@ export default function PatientsInsurancePage() {
 
       <section className="section" aria-labelledby="pmjay-heading">
         <div className="container grid gap-10 lg:grid-cols-[1fr_1.4fr] lg:items-center">
-          <div className="grid aspect-[4/3] place-items-center rounded-[18px] bg-surface p-10">
-            <Image src={img(pmjay.image).src} width={img(pmjay.image).width} height={img(pmjay.image).height} alt="PMJAY Ayushman Bharat logo" className="max-h-56 w-auto" />
+          <div className="grid aspect-[4/3] min-w-0 place-items-center rounded-[18px] bg-surface p-6 sm:p-10">
+            <Image src={img(pmjay.image).src} width={img(pmjay.image).width} height={img(pmjay.image).height} alt="PMJAY Ayushman Bharat logo" className="h-auto max-h-56 w-auto max-w-full" />
           </div>
           <div>
             <SectionHeading id="pmjay-heading" eyebrow="PMJAY / Ayushman Bharat" title="Up to ₹5,00,000 cashless cover per family, every year" />

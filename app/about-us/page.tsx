@@ -165,10 +165,23 @@ export default function AboutPage() {
             {GALLERY.map(([src, alt], i) => {
               const g = up(src);
               return (
-                <li key={src} className={i === 0 ? "col-span-2 md:row-span-2" : ""}>
-                  <figure className={`relative overflow-hidden rounded-card ${i === 0 ? "aspect-[4/3] md:h-full md:aspect-auto" : "aspect-[4/3]"}`}>
-                    <Image src={g.src} alt={alt} fill sizes={i === 0 ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 50vw"} className="object-cover" />
-                  </figure>
+                <li
+                  key={src}
+                  className={
+                    i === 0
+                      ? "relative col-span-2 aspect-[4/3] md:row-span-2 md:aspect-auto"
+                      : i === GALLERY.length - 1
+                        ? "relative aspect-[4/3] md:col-span-3 md:aspect-[3/1]"
+                        : "relative aspect-[4/3]"
+                  }
+                >
+                  <Image
+                    src={g.src}
+                    alt={alt}
+                    fill
+                    sizes={i === 0 || i === GALLERY.length - 1 ? "(min-width: 768px) 66vw, 100vw" : "(min-width: 768px) 33vw, 50vw"}
+                    className="rounded-card object-cover"
+                  />
                 </li>
               );
             })}
